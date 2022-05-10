@@ -1,0 +1,23 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Telefono</th>
+            <th scope="col">Estado</th>
+           
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let usuario of usuarios">
+            <th scope="row">{{usuario.id_usuario}}</th>
+            <td >{{usuario.nombre}}</td>
+            <td >{{usuario.telefono}}</td>
+            <td >{{usuario.estado}}</td>
+            <td>
+                <button class="btn btn-warning btn-sm mx-2" routerLink="ed/{{usuario.id_usuario}}">Aprobar</button> 
+            </td>     
+        </tr>
+    </tbody>
+</table>

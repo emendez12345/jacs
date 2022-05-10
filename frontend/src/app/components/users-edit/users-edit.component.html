@@ -1,0 +1,15 @@
+<form (ngSubmit)="updateUsers()">
+    
+    <div class="form-group">
+        <label for="nombre">nombre</label>
+        <input type="text" name="nombre" class="form-control" [(ngModel)]="users.nombre">
+    </div>
+
+    <div class="form-group">
+        <label for="estado">estado</label>
+        <input type="text" name="estado" class="form-control" [(ngModel)]="users.estado">
+    </div>
+
+  
+    <button class="btn btn-dark btn-sm mt-4" routerLink="users">Aprobar Usuario</button>
+</form>
